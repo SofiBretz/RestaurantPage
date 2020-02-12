@@ -1,0 +1,29 @@
+{
+  "name": "restaurantpage",
+  "version": "1.0.0",
+  "description": "building a restaurant page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "keywords": [
+    "javascript",
+    "webpack"
+  ],
+  "author": "SofiBretz",
+  "license": "ISC"
+}
