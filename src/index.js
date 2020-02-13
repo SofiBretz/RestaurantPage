@@ -4,18 +4,13 @@ import contactUs from './contactUs';
 import menu from './menu';
 import components from './components';
 
-const layers = () => {
-  //images and buttons for layers here
-}
-
-function display () {
-
-  const subject = document.getElementById('subject');
-
-  element('div', 'subject', 'firstSection');
-  element('div', 'firstSection', 'layer');
-  element('div', 'subject', 'main');
-}
+const layers = (name, divName) => {
+  const btn = document.createElement('buttonLayer');
+  const div = document.getElementById(divName);
+  btn.innerHTML= name;
+  btn.setAttribute('id', name);
+  div.appendChild(btn);
+};
 
 function pages (pag) {
 
@@ -36,6 +31,19 @@ function pages (pag) {
     home();
     break;
  
+  }
+
+  function buttonTab() {
+    const btnHome = document.getElementById('Home');
+    const btnMenu = document.getElementById('Menu');
+    const btnContactUs = document.getElementById('Contact Us');
+  }
+  
+  function display () {
+    const subject = document.getElementById('subject');
+    element('div', 'subject', 'firstSection');
+    element('div', 'firstSection', 'layer');
+    element('div', 'subject', 'main');
   }
 }
 
