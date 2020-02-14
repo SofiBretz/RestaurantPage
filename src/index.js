@@ -30,7 +30,11 @@ function pages (pag) {
   default:
     home();
     break;
- 
+  }
+
+  function template(id) {
+    render();
+    pages(id);
   }
 
   function buttonTab() {
@@ -38,7 +42,7 @@ function pages (pag) {
     const btnMenu = document.getElementById('Menu');
     const btnContactUs = document.getElementById('Contact Us');
   }
-  
+
   function display () {
     const subject = document.getElementById('subject');
     element('div', 'subject', 'firstSection');
@@ -48,3 +52,4 @@ function pages (pag) {
 }
 
 display();
+template('Home');

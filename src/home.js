@@ -1,3 +1,5 @@
+import { components, images} from './components';
+
 const home = () => {
 
 };
