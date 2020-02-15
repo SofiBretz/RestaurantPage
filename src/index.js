@@ -5,63 +5,47 @@ import navBar from './navBar';
 import { images} from './components';
 import './style.scss';
 
-/*const layers = (name, divName) => {
-  const btn = document.createElement('button');
-  const div = document.getElementById(divName);
-  btn.innerHTML= name;
-  btn.setAttribute('id', name);
-  div.appendChild(btn);
-};
+function pages(page) {
+
+  let currentPage;
+  switch (page) {
+    case 'Home':
+      currentPage = home();
+      break;
+
+    case 'Menu':
+      currentPage = menu();
+      break;
+
+    case 'Contact Us':
+      currentPage = contactUs();
+      break;
+
+    default:
+      currentPage = home();
+      break;
+  }
+  return currentPage;
+}
 
 const content= document.getElementById('content');
-content.textContent= '2';
+content.innerHTML += navBar;
 
-function pages(pag) {
+const nav = document.getElementById('nav');
+const container = document.createElement('div');
 
-  switch (pag) {
-  case 'Home':
-    home();
-    break;
-  
-  case 'Menu':
-    menu();
-    break;
+container.classList.add('container');
+content.appendChild(container)
 
-  case 'Contact Us':
-    contactUs();
-    break;
+const imageContainer = document.createElement('img');
+imageContainer.style.width = '100%';
+imageContainer.style.height = 'auto';
+imageContainer.src = pages().image();
+container.appendChild(imageContainer);
 
-  default:
-    home();
-    break;
-  }
-
-  function template(id) {
-    pages(id);
-  }
-
-  function buttonTab() {
-    const btnHome = document.getElementById('Home');
-    const btnMenu = document.getElementById('Menu');
-    const btnContactUs = document.getElementById('Contact Us');
-  }
-*/
-  function display () {
-
-
-    
-    //components('div', subject, 'firstSection');
-    return subject;
-    /*
-    components('div', 'firstSection', 'layer');
-    components('div', 'subject', 'main');
-
-    components('div', 'layer', 'buttons');
-    layers('About', 'buttons');
-    layers('Menu', 'buttons');
-    layers('Contact', 'buttons');
-  
-    buttonTab();*/
-  }
-console.log(display());
-content.innerHTML= navBar();
+nav.addEventListener('click', (e) => {
+  const text = e.target.textContent;
+  imageContainer.src = pages(text).image();
+  console.log( pages(text).name() );
+  console.log( pages(text).image() );
+})

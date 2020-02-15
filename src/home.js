@@ -1,17 +1,10 @@
-import { images} from './components';
+import imageLink from '../images/restaurant.jpg';
 
-const home = () => {
-    components('h1', 'main', 'homeHeader');
-    components('div', 'main', 'fiorellaSection');
-    components('div', 'main', 'restaurantSection');
+const Home = () => {
 
-    document.getElementById('homeHeader').innerHTML = "Fiorella's Restaurant";
-
-    images('https://i.imgur.com/CEA9SMH.png', 'fiorellaSection', 'FiorellaRestaurant' );
-
-
-
-
+  const name = () => 'Home';
+  const image = () => imageLink;
+  return { name, image};
 };
 
-export default home;
+export default Home;
