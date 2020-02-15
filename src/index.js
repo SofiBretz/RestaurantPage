@@ -1,18 +1,22 @@
-import render from './render';
 import home from './home';
 import contactUs from './contactUs';
 import menu from './menu';
-import components from './components';
+import navBar from './navBar';
+import { images} from './components';
+import './style.scss';
 
-const layers = (name, divName) => {
-  const btn = document.createElement('buttonLayer');
+/*const layers = (name, divName) => {
+  const btn = document.createElement('button');
   const div = document.getElementById(divName);
   btn.innerHTML= name;
   btn.setAttribute('id', name);
   div.appendChild(btn);
 };
 
-function pages (pag) {
+const content= document.getElementById('content');
+content.textContent= '2';
+
+function pages(pag) {
 
   switch (pag) {
   case 'Home':
@@ -33,7 +37,6 @@ function pages (pag) {
   }
 
   function template(id) {
-    render();
     pages(id);
   }
 
@@ -42,14 +45,23 @@ function pages (pag) {
     const btnMenu = document.getElementById('Menu');
     const btnContactUs = document.getElementById('Contact Us');
   }
-
+*/
   function display () {
-    const subject = document.getElementById('subject');
-    element('div', 'subject', 'firstSection');
-    element('div', 'firstSection', 'layer');
-    element('div', 'subject', 'main');
-  }
-}
 
-display();
-template('Home');
+
+    
+    //components('div', subject, 'firstSection');
+    return subject;
+    /*
+    components('div', 'firstSection', 'layer');
+    components('div', 'subject', 'main');
+
+    components('div', 'layer', 'buttons');
+    layers('About', 'buttons');
+    layers('Menu', 'buttons');
+    layers('Contact', 'buttons');
+  
+    buttonTab();*/
+  }
+console.log(display());
+content.innerHTML= navBar();

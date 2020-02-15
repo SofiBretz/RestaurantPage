@@ -1,12 +1,3 @@
-const components = (comp, parent, id) => {
-    const newComp = document.createElement(comp);
-    const parentComp = document.getElementById(parent);
-    newComp.setAttribute('id', id);
-    parentComp.appendChild(newComp);
-
-    return id;
-};
-
 const images = (url, divImg, imgClass) => {
     const img = document.createElement('img');
     const div = document.getElementById(divImg);
@@ -16,4 +7,4 @@ const images = (url, divImg, imgClass) => {
     div.appendChild(img);
 };
 
-export default components;
+export {images};
