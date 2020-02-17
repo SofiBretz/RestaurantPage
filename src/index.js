@@ -52,19 +52,16 @@ nav.addEventListener('click', (e) => {
   container.innerHTML = "";
   if (text == 'Menu') {  
     container.innerHTML = pages(text).image();
-    console.log("menu");
   } else if (text == 'Contact Us') {
     container.appendChild(imageContainer);
     imageContainer.src= pages(text).image();
     container.innerHTML += pages(text).form();
     container.innerHTML += imageContainer;
-    console.log("contact us");
   } else {
     homeHeader.textContent= pages().name();
     container.appendChild(homeHeader);
     container.appendChild(imageContainer);
     imageContainer.src= pages(text).image();
-    console.log("home");
   }
  
 

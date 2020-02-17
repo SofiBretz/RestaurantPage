@@ -1,4 +1,4 @@
-import imageLink from '../images/fiorella.jpg';
+import imageLink from '../images/restaurant.jpg';
 
 const ContactUs = () => {
   const name = () => 'Contact Us';

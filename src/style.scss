@@ -2,12 +2,33 @@
 
 .container {
     margin-top: 10px;
+    width: 100%;
   }
+
+.nav {
+  background: darkslategray;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuImg {
+  top: 25%;
+}
+
 
 #formContainer {
     position: absolute;
-    width: 70%;
-    top: 20%;
-    left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    color: whitesmoke;
 }
 
