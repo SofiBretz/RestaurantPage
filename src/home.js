@@ -6,7 +6,7 @@ const Home = () => {
 
   const welcome= () => 
   `<div id= "welcome">
-    <h1>"Welcome to Fiorella's Restaurant"</h1>
+    <h1>Welcome to Fiorella's Restaurant</h1>
     <p>Enjoy this magnificent gourmet meal</p>
   </div>`
 

@@ -37,7 +37,7 @@ container.classList.add('container');
 content.appendChild(container)
 
 const homeHeader= document.createElement('h1');
-homeHeader.textContent= pages().name();
+homeHeader.innerHTML = pages().welcome();
 container.appendChild(homeHeader);
 
 const imageContainer = document.createElement('img');
@@ -58,7 +58,7 @@ nav.addEventListener('click', (e) => {
     container.innerHTML += pages(text).form();
     container.innerHTML += imageContainer;
   } else {
-    homeHeader.textContent= pages().name();
+    homeHeader.innerHTML = pages(text).welcome();
     container.appendChild(homeHeader);
     container.appendChild(imageContainer);
     imageContainer.src= pages(text).image();
