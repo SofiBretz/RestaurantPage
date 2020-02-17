@@ -1,26 +1,25 @@
-@import '~bootstrap/scss/bootstrap';
-
+@import "~bootstrap/scss/bootstrap";
 
 .container {
-    margin-top: 2%;
-    width: 100%;
-    margin-bottom: 2%;
-  }
+  margin-top: 2%;
+  width: 100%;
+  margin-bottom: 2%;
+}
 
-.navbar-nav a{ 
+.navbar-nav a {
   color: whitesmoke;
-  }
+}
 
 #welcome {
-text-align: center;
-margin-top: 4%;
-margin-bottom: 4%;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 h1 {
-  color: #6c5163; 
+  color: #6c5163;
   font-weight: bold;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   letter-spacing: 1px;
 }
 
@@ -28,28 +27,26 @@ p {
   color: #516c5a;
   font-size: 30px;
   margin-top: 1%;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menuImg {
   top: 25%;
 }
 
-
 #formContainer {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    top: 25%;
-    left: 25%;
-    color: whitesmoke;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  color: whitesmoke;
 }
-

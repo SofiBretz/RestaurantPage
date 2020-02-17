@@ -1,12 +1,9 @@
-import imageLink from '../images/burger.jpg';
+import imageLink from "../images/burger.jpg";
 
 const Menu = () => {
-  const name = () => 'Menu';
+  const name = () => "Menu";
 
-  
-
-  const rowMenu= 
-    `<div class="container">
+  const rowMenu = `<div class="container">
         <div class="row menu">
           <div class="col-md-4 ">
             <img class= "menuImg" width= "300px" height= "200px" src="../images/burger.jpg">
@@ -42,10 +39,10 @@ const Menu = () => {
             <h4>$17</h4>
         </div>
         </div>
-      </div>`
+      </div>`;
 
-      const image = () => rowMenu;
-      return { name, image};
+  const image = () => rowMenu;
+  return { name, image };
 };
 
 export default Menu;

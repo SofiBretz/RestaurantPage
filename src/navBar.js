@@ -8,5 +8,6 @@ const NavBar = (() => {
      <a class="nav-link" href="#">Contact Us</a>
   </div>
   </nav>`;
-  })();
-  export default NavBar;
+})();
+
+export default NavBar;
