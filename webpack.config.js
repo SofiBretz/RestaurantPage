@@ -10,9 +10,7 @@ module.exports = {
     rules: [
       {
         test: /\.(png|jpe?g|svg|gif)$/,
-        use: [
-          'file-loader',
-        ]
+        use: ['file-loader'],
       },
       {
         test: /\.m?js$/,
@@ -26,11 +24,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
