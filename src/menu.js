@@ -1,7 +1,5 @@
-import imageLink from "../images/burger.jpg";
-
 const Menu = () => {
-  const name = () => "Menu";
+  const name = () => 'Menu';
 
   const rowMenu = `<div class="container">
         <div class="row">

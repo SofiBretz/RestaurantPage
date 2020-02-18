@@ -1,5 +1,4 @@
-const NavBar = (() => {
-  return `
+const NavBar = (() => `
   <nav class="navbar navbar-expand-lg">
   
   <div id= "nav" class="navbar-nav">
@@ -7,7 +6,6 @@ const NavBar = (() => {
      <a class="nav-link" href="#">Menu</a>
      <a class="nav-link" href="#">Contact Us</a>
   </div>
-  </nav>`;
-})();
+  </nav>`)();
 
 export default NavBar;

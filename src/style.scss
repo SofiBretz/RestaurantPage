@@ -1,14 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  background-color: #E5DDD5;
+  background-color: #e5ddd5;
 }
 
 .container {
   margin-top: 2%;
   width: 100%;
   margin-bottom: 2%;
-
 }
 
 #nav {
@@ -32,7 +31,7 @@ body {
   border-radius: 2px;
 }
 
-nav.navbar{
+nav.navbar {
   background-color: #666666 !important;
 }
 
@@ -68,7 +67,7 @@ h4 {
   color: #6c5163;
 }
 
-.row p{
+.row p {
   color: #516c5a;
   font-size: 24px;
   margin: 5%;
@@ -119,7 +118,7 @@ form {
 }
 
 .form-control {
-  background-color: #E5DDD5;
+  background-color: #e5ddd5;
 }
 
 .btn {

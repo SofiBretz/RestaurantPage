@@ -1,10 +1,9 @@
-import imageLink from "../images/restaurant.jpg";
+import imageLink from '../images/restaurant.jpg';
 
 const ContactUs = () => {
-  const name = () => "Contact Us";
+  const name = () => 'Contact Us';
 
-  const form = () =>
-    `<div id= "formContainer">
+  const form = () => `<div id= "formContainer">
         <form>
             <div class="form-group">
               <label for="exampleFormControlInput1">Email</label>
@@ -20,7 +19,7 @@ const ContactUs = () => {
     </div>`;
   const image = () => imageLink;
 
-  return {name, form, image};
+  return { name, form, image };
 };
 
 export default ContactUs;
