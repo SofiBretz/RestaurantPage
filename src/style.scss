@@ -26,6 +26,12 @@ body {
   margin-left: 4px;
 }
 
+.navbar-nav a:hover {
+  background-color: #757575;
+  border-color: #757575;
+  border-radius: 2px;
+}
+
 nav.navbar{
   background-color: #666666 !important;
 }
@@ -59,7 +65,7 @@ h4 {
   display: flex;
   align-items: center;
   width: 100%;
-  color: #666666;
+  color: #6c5163;
 }
 
 .row p{
@@ -102,7 +108,30 @@ form {
   align-items: center;
   justify-content: center;
   width: 50%;
-  top: 25%;
+  top: 30%;
   left: 25%;
   color: whitesmoke;
+}
+
+.form-group {
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}
+
+.form-control {
+  background-color: #E5DDD5;
+}
+
+.btn {
+  background-color: #516c5a;
+  border-color: #516c5a;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #6c5163;
+  border-color: #6c5163;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
 }

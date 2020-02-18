@@ -23,7 +23,7 @@ const Menu = () => {
         <div class="row">
         <div id="colSize" class="col-md-max">
             <img class= "menuImg" width= "640px" height= "480px" src="../images/onion.jpg">
-            <p>Homemade soup, delicious! </p>
+            <p>Homemade onion soup, delicious! </p>
             <h4>$18</h4>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Menu = () => {
         <div class="row">
           <div id="colSize" class="col-md-max">
             <img class= "menuImg" width= "640px" height= "480px" src="../images/vegetarian.jpg">
-            <p>For veggies! here is a very good option! </p>
+            <p>For veggies! Here is a very good option! </p>
             <h4>$20</h4>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Menu = () => {
         <div class="row">
         <div id="colSize" class="col-md-max">
             <img class= "menuImg" width= "640px" height= "480px" src="../images/cannel.jpg">
-            <p>Swidish receipt</p>
+            <p>Kanelbullar, Swidish receipt</p>
             <h4>$17</h4>
         </div>
         </div>
