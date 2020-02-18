@@ -1,8 +1,8 @@
 const NavBar = (() => {
   return `
-  <nav class="navbar navbar-expand-lg bg-secondary">
+  <nav class="navbar navbar-expand-lg">
   
-  <div class="navbar-nav">
+  <div id= "nav" class="navbar-nav">
      <a class="navbar-brand" href="#">Home</a>
      <a class="nav-link" href="#">Menu</a>
      <a class="nav-link" href="#">Contact Us</a>

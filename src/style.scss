@@ -1,13 +1,33 @@
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  background-color: #E5DDD5;
+}
+
 .container {
   margin-top: 2%;
   width: 100%;
   margin-bottom: 2%;
+
+}
+
+#nav {
+  width: 100%;
+  margin: 2px;
 }
 
 .navbar-nav a {
   color: whitesmoke;
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 4px;
+}
+
+nav.navbar{
+  background-color: #666666 !important;
 }
 
 #welcome {
@@ -30,14 +50,50 @@ p {
   font-family: "PT Serif", serif;
 }
 
+h4 {
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  margin: 3%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #666666;
+}
+
+.row p{
+  color: #516c5a;
+  font-size: 24px;
+  margin: 5%;
+  font-family: "PT Serif", serif;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .menu {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+#colSize {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .menuImg {
-  top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: fit-content;
+}
+
+form {
+  width: 50%;
 }
 
 #formContainer {

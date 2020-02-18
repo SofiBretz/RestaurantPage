@@ -19,7 +19,8 @@ const ContactUs = () => {
           </form>
     </div>`;
   const image = () => imageLink;
-  return { name, form, image };
+
+  return {name, form, image};
 };
 
 export default ContactUs;

@@ -1,21 +1,22 @@
-import home from "./home";
-import contactUs from "./contactUs";
-import menu from "./menu";
-import navBar from "./navBar";
-import "./style.scss";
+import home from './home';
+import contactUs from './contactUs';
+import menu from './menu';
+import navBar from './navBar';
+import './style.scss';
 
 function pages(page) {
+
   let currentPage;
   switch (page) {
-    case "Home":
+    case 'Home':
       currentPage = home();
       break;
 
-    case "Menu":
+    case 'Menu':
       currentPage = menu();
       break;
 
-    case "Contact Us":
+    case 'Contact Us':
       currentPage = contactUs();
       break;
 
@@ -26,39 +27,42 @@ function pages(page) {
   return currentPage;
 }
 
-const content = document.getElementById("content");
+const content= document.getElementById('content');
 content.innerHTML += navBar;
 
-const nav = document.getElementById("nav");
-const container = document.createElement("div");
+const nav = document.getElementById('nav');
+const container = document.createElement('div');
 
-container.classList.add("container");
-content.appendChild(container);
+container.classList.add('container');
+content.appendChild(container)
 
-const homeHeader = document.createElement("h1");
+const homeHeader= document.createElement('h1');
 homeHeader.innerHTML = pages().welcome();
 container.appendChild(homeHeader);
 
-const imageContainer = document.createElement("img");
-imageContainer.style.width = "100%";
-imageContainer.style.height = "auto";
+const imageContainer = document.createElement('img');
+imageContainer.style.width = '100%';
+imageContainer.style.height = 'auto';
 imageContainer.src = pages().image();
 container.appendChild(imageContainer);
 
-nav.addEventListener("click", e => {
+
+nav.addEventListener('click', (e) => {
   const text = e.target.textContent;
-  container.innerHTML = "";
-  if (text == "Menu") {
+  container.innerHTML = '';
+  if (text == 'Menu') {  
     container.innerHTML = pages(text).image();
-  } else if (text == "Contact Us") {
+  } else if (text == 'Contact Us') {
     container.appendChild(imageContainer);
-    imageContainer.src = pages(text).image();
+    imageContainer.src= pages(text).image();
     container.innerHTML += pages(text).form();
-    container.innerHTML += imageContainer;
+
   } else {
     homeHeader.innerHTML = pages(text).welcome();
     container.appendChild(homeHeader);
     container.appendChild(imageContainer);
-    imageContainer.src = pages(text).image();
+    imageContainer.src= pages(text).image();
   }
-});
+ 
+
+})
