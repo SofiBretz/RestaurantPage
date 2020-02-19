@@ -16,7 +16,7 @@ The main goal of this project is understanding of the benefits of modularized co
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://sofibretz.github.io/RestaurantPage/)
 
 ## Getting Started
 
