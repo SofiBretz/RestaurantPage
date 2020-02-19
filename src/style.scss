@@ -1,0 +1,136 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: #e5ddd5;
+}
+
+.container {
+  margin-top: 2%;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+#nav {
+  width: 100%;
+  margin: 2px;
+}
+
+.navbar-nav a {
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.navbar-nav a:hover {
+  background-color: #757575;
+  border-color: #757575;
+  border-radius: 2px;
+}
+
+nav.navbar {
+  background-color: #666666 !important;
+}
+
+#welcome {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+h1 {
+  color: #6c5163;
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #516c5a;
+  font-size: 30px;
+  margin-top: 1%;
+  font-family: "PT Serif", serif;
+}
+
+h4 {
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  margin: 3%;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #6c5163;
+}
+
+.row p {
+  color: #516c5a;
+  font-size: 24px;
+  margin: 5%;
+  font-family: "PT Serif", serif;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colSize {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menuImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: fit-content;
+}
+
+form {
+  width: 50%;
+}
+
+#formContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  top: 30%;
+  left: 25%;
+  color: whitesmoke;
+}
+
+.form-group {
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}
+
+.form-control {
+  background-color: #e5ddd5;
+}
+
+.btn {
+  background-color: #516c5a;
+  border-color: #516c5a;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #6c5163;
+  border-color: #6c5163;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}

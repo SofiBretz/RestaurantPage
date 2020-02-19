@@ -4,26 +4,50 @@
   "description": "building a restaurant page",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production",
     "start": "webpack-dev-server --mode development --open"
   },
   "directories": {
     "test": "test"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset": "^1.1.1",
+    "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint-plugin-import": "^2.20.1",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3"
   },
   "keywords": [
     "javascript",
     "webpack"
   ],
   "author": "SofiBretz",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiBretz/RestaurantPage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SofiBretz/RestaurantPage/issues"
+  },
+  "homepage": "https://github.com/SofiBretz/RestaurantPage#readme"
 }
