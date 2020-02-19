@@ -30,6 +30,7 @@ The main goal of this project is understanding of the benefits of modularized co
 
 ### Install
 
+- Install npm and webpack commands.
 - Install a text editor (if you don't have already).
 - Clone the project to your computer.
 
